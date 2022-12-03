@@ -1,5 +1,6 @@
 import React from "react";
 import axios from "axios";
+import LarnuGif from "../LarnuGif.gif";
 import "../pages/styles/Login.css";
 import { useState } from "react";
 
@@ -36,6 +37,7 @@ const Login = ({ setToken, logged, setLogged, baseUrl }) => {
   return (
     <div className="Login-container">
       <form onSubmit={submit}>
+        <img src={LarnuGif} alt="LarnU Gif" className="larnu-gif"/>
         <label htmlFor="email">Email</label>
         <input
           type="text"
