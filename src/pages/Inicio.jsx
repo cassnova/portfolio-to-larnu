@@ -6,6 +6,7 @@ import SobreMi from "./SobreMi";
 import Portafolio from "./Portafolio";
 import Contacto from "./Contacto";
 import Nav from "../components/nav/Nav";
+import Bio from "../components/bio/Bio";
 import "../pages/styles/Inicio.css";
 
 const Inicio = ({
@@ -27,7 +28,7 @@ const Inicio = ({
         .then((res) => {
           setDataToken(res.data);
           setChecked(true);
-          console.log(res);
+          // console.log(res);
         });
     }
     checkToken();
@@ -45,7 +46,7 @@ const Inicio = ({
             <Route path="/contacto" element={<Contacto />}></Route>
           </Routes>
           <Nav />
-          <h1>Welcome {dataToken.username}</h1>
+          <Bio />
         </div>
       ) : (
         <p>Cargando...</p>
