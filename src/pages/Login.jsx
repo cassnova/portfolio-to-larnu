@@ -1,5 +1,6 @@
 import React from "react";
 import axios from "axios";
+import "../pages/styles/Login.css";
 import { useState } from "react";
 
 const Login = ({ setToken, logged, setLogged, baseUrl }) => {
@@ -33,7 +34,7 @@ const Login = ({ setToken, logged, setLogged, baseUrl }) => {
   }
 
   return (
-    <div>
+    <div className="Login-container">
       <form onSubmit={submit}>
         <label htmlFor="email">Email</label>
         <input
