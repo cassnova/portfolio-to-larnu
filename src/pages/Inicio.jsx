@@ -7,6 +7,8 @@ import Portafolio from "./Portafolio";
 import Contacto from "./Contacto";
 import Nav from "../components/nav/Nav";
 import Bio from "../components/bio/Bio";
+import Proyectos from "../components/proyectos/Proyectos";
+import Data from "../bd";
 import "../pages/styles/Inicio.css";
 
 const Inicio = ({
@@ -47,6 +49,7 @@ const Inicio = ({
           </Routes>
           <Nav />
           <Bio />
+          <Proyectos data={Data} />
         </div>
       ) : (
         <p>Cargando...</p>
