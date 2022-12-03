@@ -1,5 +1,42 @@
 .nav-container {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  background-color: blanchedalmond;
+  background-color: var(--secondary);
+  padding: 20px 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+.logo {
+  width: 55px;
+}
+
+.nav-container ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: fixed;
+  top: 112px;
+  right: -300px;
+  width: 300px;
+  height: 100vh;
+  background: var(--secondary);
+  box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+  padding: 40px 0 0 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-container ul.active {
+  right: 0px;
+}
+
+.nav-container ul li {
+  padding: 10px 2px;
+  font-weight: bold;
+  font-size: 20px;
+}
+#bar {
+  font-size: 25px;
+  cursor: pointer;
 }
