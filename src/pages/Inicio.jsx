@@ -8,6 +8,7 @@ import Contacto from "./Contacto";
 import Nav from "../components/nav/Nav";
 import Bio from "../components/bio/Bio";
 import Proyectos from "../components/proyectos/Proyectos";
+import Footer from "../components/footer/Footer";
 import Data from "../bd";
 import "../pages/styles/Inicio.css";
 
@@ -50,6 +51,7 @@ const Inicio = ({
           <Nav />
           <Bio />
           <Proyectos data={Data} />
+          <Footer />
         </div>
       ) : (
         <p>Cargando...</p>
