@@ -42,6 +42,9 @@
 }
 
 @media (min-width: 1280px) {
+  .nav-container {
+    padding: 20px 200px;
+  }
   .nav-container ul {
     display: flex;
     flex-direction: row;
@@ -68,7 +71,7 @@
     color: var(--tertiary);
     transition: 0.3s ease-in-out;
   }
-  
+
   #mobile {
     display: none;
   }
