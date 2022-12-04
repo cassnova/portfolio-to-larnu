@@ -6,8 +6,8 @@ import { useState } from "react";
 
 const Login = ({ setToken, logged, setLogged, baseUrl }) => {
   const [values, setValues] = useState({
-    email: "daniel.rojascasanova@gmail.com",
-    discordId: "309536294017433601",
+    email: "",
+    discordId: "",
   });
 
   const handleChange = (e) => {
@@ -37,8 +37,7 @@ const Login = ({ setToken, logged, setLogged, baseUrl }) => {
   return (
     <div className="Login-container">
       <form onSubmit={submit}>
-        <img src={LarnuGif} alt="LarnU Gif" className="larnu-gif"/>
-        <label htmlFor="email">Email</label>
+        <img src={LarnuGif} alt="LarnU Gif" className="larnu-gif" />
         <input
           type="text"
           name="email"
@@ -47,18 +46,15 @@ const Login = ({ setToken, logged, setLogged, baseUrl }) => {
           onChange={handleChange}
           value={values.email}
           required
-          readOnly
         />
-        <label htmlFor="discordID">Discord ID</label>
         <input
           value={values.discordId}
           onChange={handleChange}
           type="text"
-          name="discordID"
+          name="discordId"
           id="discordID"
           placeholder="Discord ID"
           required
-          readOnly
         />
         <button type="submit">Login</button>
       </form>

@@ -37,15 +37,10 @@ const Inicio = ({
     <>
       {checked ? (
         <div className="inicio-container">
-          {/* <Routes>
-            <Route path={`${baseUrl}/auth/check`} element={<Inicio />}></Route>
-            <Route path="/inicio" element={<Inicio />}></Route>
-            <Route path="/sobre-mi" element={<SobreMi />}></Route>
-            <Route path="/portafolio" element={<Portafolio />}></Route>
-            <Route path="/contacto" element={<Contacto />}></Route>
-          </Routes> */}
           <Nav />
+          <h1>Portafolio</h1>
           <Bio />
+          <h2>Proyectos</h2>
           <Proyectos data={Data} />
           <Footer />
         </div>

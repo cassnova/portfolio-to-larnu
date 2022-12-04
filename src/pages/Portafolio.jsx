@@ -9,6 +9,7 @@ const Portafolio = () => {
   return (
     <div className="portafolio-container">
       <Nav />
+      <h2>Portafolio</h2>
       <Proyectos data={Data} />
       <Footer />
     </div>

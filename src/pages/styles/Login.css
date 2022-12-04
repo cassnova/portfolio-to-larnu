@@ -30,8 +30,9 @@
 .Login-container input {
   width: 75%;
   padding: 10px;
+  margin: 20px 0px;
   border: none;
-  border-radius: 15px;
+  /* border-radius: 15px; */
   transition: all ease-in-out 0.2s;
 }
 
@@ -44,7 +45,7 @@
   width: 180px;
   height: 50px;
   border: none;
-  border-radius: 15px;
+  /* border-radius: 15px; */
   background-color: var(--white);
   font-weight: bold;
   cursor: pointer;

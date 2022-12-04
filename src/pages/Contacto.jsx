@@ -115,7 +115,7 @@ const Contacto = () => {
             <span className="success-message">¡Mensaje enviado con exito!</span>
           )}
           {logoutError && (
-            <span className="error-message">No se pudo cerrar sesión.</span>
+            <span className="error-message">Intenta de nuevo por favor.</span>
           )}
         </form>
       </div>
