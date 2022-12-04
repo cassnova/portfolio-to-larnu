@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import "./Nav.css";
 import Logo from "../../larnu-logo.png";
 
@@ -14,16 +14,16 @@ const Nav = () => {
       <div>
         <ul className={clicked ? "active" : null}>
           <li>
-            <NavLink to="/">Inicio</NavLink>
+            <Link to="/">Inicio</Link>
           </li>
           <li>
-            <NavLink to="/sobremi">Sobre Mi</NavLink>
+            <Link to="/sobre-mi">Sobre Mi</Link>
           </li>
           <li>
-            <NavLink to="/portafolio">Portafolio</NavLink>
+            <Link to="/portafolio">Portafolio</Link>
           </li>
           <li>
-            <NavLink to="/contacto">Contacto</NavLink>
+            <Link to="/contacto">Contacto</Link>
           </li>
         </ul>
       </div>

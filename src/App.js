@@ -1,5 +1,9 @@
 import "./App.css";
 import { useState } from "react";
+import SobreMi from "./pages/SobreMi";
+import Portafolio from "./pages/Portafolio";
+import Contacto from "./pages/Contacto";
+import { Routes, Route } from "react-router-dom";
 import Login from "./pages/Login";
 import Inicio from "./pages/Inicio";
 
@@ -12,27 +16,35 @@ function App() {
 
   return (
     <div className="App">
-      <div className="App">
-        {logged ? (
-          <Inicio
-            token={token}
-            setToken={setToken}
-            dataToken={dataToken}
-            setDataToken={setDataToken}
-            checked={checked}
-            setChecked={setChecked}
-            baseUrl={baseUrl}
-          />
-        ) : (
-          <Login
-            token={token}
-            setToken={setToken}
-            logged={logged}
-            setLogged={setLogged}
-            baseUrl={baseUrl}
-          />
-        )}
-      </div>
+      {logged ? (
+        <Routes>
+          <Route
+            path="*"
+            element={
+              <Inicio
+                token={token}
+                setToken={setToken}
+                dataToken={dataToken}
+                setDataToken={setDataToken}
+                checked={checked}
+                setChecked={setChecked}
+                baseUrl={baseUrl}
+              />
+            }
+          ></Route>
+          <Route path="/sobre-mi" element={<SobreMi />}></Route>
+          <Route path="/portafolio" element={<Portafolio />}></Route>
+          <Route path="/contacto" element={<Contacto />}></Route>
+        </Routes>
+      ) : (
+        <Login
+          token={token}
+          setToken={setToken}
+          logged={logged}
+          setLogged={setLogged}
+          baseUrl={baseUrl}
+        />
+      )}
     </div>
   );
 }

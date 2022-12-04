@@ -1,10 +1,6 @@
 import React from "react";
 import axios from "axios";
 import { useEffect } from "react";
-import { Routes, Route, Navigate } from "react-router-dom";
-import SobreMi from "./SobreMi";
-import Portafolio from "./Portafolio";
-import Contacto from "./Contacto";
 import Nav from "../components/nav/Nav";
 import Bio from "../components/bio/Bio";
 import Proyectos from "../components/proyectos/Proyectos";
@@ -41,13 +37,13 @@ const Inicio = ({
     <>
       {checked ? (
         <div className="inicio-container">
-          <Routes>
+          {/* <Routes>
             <Route path={`${baseUrl}/auth/check`} element={<Inicio />}></Route>
-            <Route path="/inicio" element={<Navigate to={"/"} />}></Route>
-            <Route path="/biografia" element={<SobreMi />}></Route>
+            <Route path="/inicio" element={<Inicio />}></Route>
+            <Route path="/sobre-mi" element={<SobreMi />}></Route>
             <Route path="/portafolio" element={<Portafolio />}></Route>
             <Route path="/contacto" element={<Contacto />}></Route>
-          </Routes>
+          </Routes> */}
           <Nav />
           <Bio />
           <Proyectos data={Data} />
