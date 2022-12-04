@@ -40,3 +40,36 @@
   font-size: 25px;
   cursor: pointer;
 }
+
+@media (min-width: 1280px) {
+  .nav-container ul {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 500px;
+    height: 10px;
+    background: none;
+    box-shadow: none;
+    padding: 40px 0 0 10px;
+  }
+
+  .nav-container ul li {
+    padding: 5px 10px;
+  }
+
+  .nav-container ul li a {
+    display: block;
+  }
+
+  .nav-container ul li a:hover {
+    color: var(--tertiary);
+    transition: 0.3s ease-in-out;
+  }
+  
+  #mobile {
+    display: none;
+  }
+}

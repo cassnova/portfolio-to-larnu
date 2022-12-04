@@ -62,3 +62,33 @@
   border-radius: 20px;
   transition: 0.5s;
 }
+
+@media (min-width: 1280px) {
+  .card-container {
+    width: 500px;
+  }
+  .img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    /* border: 1px solid blue; */
+  }
+
+  .img-container img {
+    width: 130px;
+    transition: 1s;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+
+  .img-container img:hover {
+    filter: invert(180%);
+  }
+  .description-container {
+    width: 70%;
+  }
+  .btn-webs:hover {
+    background-color: var(--tertiary);
+  }
+}

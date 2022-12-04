@@ -38,7 +38,7 @@ const Inicio = ({
       {checked ? (
         <div className="inicio-container">
           <Nav />
-          <h1>Portafolio</h1>
+          <h1>¡Bienvenido!</h1>
           <Bio />
           <h2>Proyectos</h2>
           <Proyectos data={Data} />
